@@ -144,11 +144,12 @@
 /* MOBILE RESPONSIVENESS */
 /*TABLETS (1520px and below)*/
 @media (max-width: 1520px) {
-  .container nav .menu {
-    gap: 7rem;
+  .container nav {
+    gap: 1rem;
+    padding: 1rem 1rem;
   }
-  .container nav .menu .links {
-    gap: 2rem;
+  .container nav #mobileMenu {
+    gap: 1.5rem;
   }
   .container #img1, #img2 {
     display: none;
@@ -164,11 +165,12 @@
 }
 /*TABLETS (1024px and below)*/
 @media (max-width: 1024px) {
-  .container nav .menu {
-    gap: 2.5rem;
-  }
-  .container nav .menu .links {
+  .container nav {
     gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  .container nav #mobileMenu {
+    gap: 1.5rem;
   }
   .container #img1, #img2 {
     display: none;

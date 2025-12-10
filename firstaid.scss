@@ -244,17 +244,13 @@ nav{
 
 /*Tablets (1024px and below) */
 @media (max-width: 1024px) {
-    nav {
-    gap: 0.5rem;
-    padding-bottom: 1.5rem;
-}
-
-nav .menu{
-    gap: 2.5rem;
+ nav {
+    gap: 1rem;
+    padding: 1rem 1rem;
   }
 
-  nav .menu .links {
-    gap: 0.8rem;
+nav #mobileMenu{
+    gap: 1.5rem;
   }
 
 }

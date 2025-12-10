@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="img">
+                <img src="assets/image 63.png" alt="">
+                <img src="assets/MediAlert (1).png" alt="">
+            </div>
+            <div class="menu" id="mobileMenu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="health.html">Health Info</a>
+                <a href="firstaid.html">First Aid</a>
+                <a href="contact.html">Contact Us</a>
+            <button id="signOutBtn">Sign Out</button>
+            </div>
+            <i class="fa-solid fa-bars" id="menubtn"></i>
+        </nav>
+
+        <section>
+            <div class="text">
+                <span id="bold">Your <span id="colour1">trusted care</span> for every emergency.</span><br>
+                <span id="small"><span id="colour2">Protecting Your Safety at Every Moment.</span> Access vital emergency support directly
+                    from your device. Use one-tap SOS alerts, store medical details, track reminders, 
+                    and view offline first-aid guides with ease. Ready to stay prepared anytime? <span id="colour3">Get Started</span> or Download MediAlert now.</span>
+                <a href="download.html">Download MediAlert App</a>
+                <div class="img">
+                    <small>Trusted by thousands in emergencies:</small>
+                    <div class="imgs">
+                        <img src="assets/Medical logo.png" alt="">
+                        <img src="assets/Hero Section/Vector.png" alt="">
+                        <img src="assets/Hero Section/health02 logo.png" alt="">
+                        <img src="assets/Hero Section/image0.png" alt="">
+                        <img src="assets/Hero Section/image 68.png" alt="">
+                        <img src="assets/Hero Section/g10.png" alt="">
+                    </div>
+                </div>
+                <div class="gethelp">
+                    <h3>Get immediate assistance in 3 easy steps.</h3>
+                    <form id="my-form" action="https://formspree.io/f/xldqpeky" method="POST">
+                        <div class="form-group">
+                            <label for="email"><img src="assets/Medi Alert(acc page 1) (8)/Hero Section/ic_round-email.png" 
+                            alt="">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><img src="assets/Medi Alert(acc page 1) (8)/Hero Section/ic_round-email 5.png" 
+                            alt="">Contact Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Contact Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location"><img src="assets/Hero Section/image 46.png" 
+                            alt=""> Location</label>
+                        <input type="text" id="location" name="location" placeholder="Enter Your Location" required>
+                        </div>
+                        
+                        <div id="btn">
+                            <button id="btn">Get Help</button>
+                        </div>
+                        <span id="errorMsg"></span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="images">
+                <img id="img1" src="assets/Medi Alert(acc page 1) (8)/Hero Section/Rectangle 1.png" alt="">
+                <img id="img2" src="assets/Medi Alert(acc page 1) (8)/Hero Section/image 74.png" alt="">
+                <img id="img3" src="assets/Medi Alert(acc page 1) (8)/Hero Section/Frame 6.png" alt="">
+                <img id="img4" src="assets/Medi Alert(acc page 1) (8)/Hero Section/Frame 4.png" alt="">
+                <img id="img5" src="assets/Medi Alert(acc page 1) (8)/Hero Section/Frame 3.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script src="menubar.js"></script>
+    <script src="gethelp.js"></script>
+    <script src="signout.js"></script>
+</body>
+</html>

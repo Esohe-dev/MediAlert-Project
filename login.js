@@ -17,7 +17,7 @@ if (loginbtn) {
    .then(() => {
     // Signed in 
     // Redirect to dashbord or where ever you want it to go
-      window.location.href = "index.html";
+      window.location.href = "home.html";
   })
   .catch((error) => {
     const errorCode = error.code;

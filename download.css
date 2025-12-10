@@ -192,11 +192,12 @@ body {
 
 /*TABLETS (1024px and below)*/
 @media (max-width: 1024px) {
-  .container nav .menu {
-    gap: 2.5rem;
-  }
-  .container nav .menu .links {
+  .container nav {
     gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  .container nav #mobileMenu {
+    gap: 1.5rem;
   }
 }
 @media (max-width: 768px) {
