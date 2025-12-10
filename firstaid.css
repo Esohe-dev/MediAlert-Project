@@ -252,6 +252,20 @@ nav #menubtn {
     padding: 1rem 0;
     z-index: 99;
   }
+  .container {
+    gap: 1rem;
+    margin: 1rem;
+  }
+  .container .first,
+  .container .second,
+  .container .third,
+  .container .fourth,
+  .container .fifth,
+  .container .sixth,
+  .container .seventh,
+  .container .eighth {
+    flex-direction: column;
+  }
 }
 @media (max-width: 480px) {
   nav #mobileMenu.active {
@@ -277,7 +291,7 @@ nav #menubtn {
     grid-template-columns: 1fr; /* two columns */
     grid-template-areas: "first third" "second fourth" "fifth seventh" "sixth eighth";
     gap: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .container .first,
   .container .second,

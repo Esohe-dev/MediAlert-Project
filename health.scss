@@ -231,8 +231,32 @@
 
   .container .boxes .box1,
   .container .boxes .box2 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .container .boxes .box2 {
+    margin-bottom: 2rem;
+  }
+
+  .container .boxes .box1 .item1,
+  .container .boxes .box1 .item2,
+  .container .boxes .box2 .item3,
+  .container .boxes .box2 .item4,
+  .container .boxes .box2 .item5 {
+    width: 90%; /* Full width on mobile */
+    padding: 2rem;
+  }
+
+  .container .boxes h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container .boxes span {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
@@ -286,13 +310,6 @@
   .container .boxes .box2 .item5 {
     width: 90%; /* Full width on mobile */
     padding: 2rem;
-  }
-
-  .container nav .menu #btn {
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    padding: 0.8rem;
   }
 
   .container .boxes h3 {
