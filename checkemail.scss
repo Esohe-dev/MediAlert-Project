@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.231);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border: 2px solid gray;
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    height: 60vh;
+    header{
+        background-color: #0F77F0;
+        #img{
+            display: flex;
+            justify-content: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        #img{
+            width: 45px;
+            border-radius: 25px;
+            padding: 0.7rem;
+            display: flex;
+            justify-content: center;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            background-color: #ECECEC;
+        }
+        .texts{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            #txt1{
+                font-size: 13px;
+                font-weight: 500;
+                color: #989898;
+            }
+            #txt2{
+                font-size: 15px;
+                font-weight: 500;
+                color: #989898;
+                display: flex;
+                gap: 1rem;
+                a{
+                    color: black;
+                }
+                a:hover{
+                    color: #0F77F0;
+                }
+            }
+        }
+    }
+}
+
+
+/* Large screens: container fixed width */
+@media (max-width: 768px) {
+
+    .container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  border: 2px solid gray;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 60vh;
+  margin: 0; /* ensure no auto centering */
+}
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  body {
+    display: block;
+    background-color: white;
+  }
+
+  .container {
+    width: 100%;      /* full width of the screen */
+    height: auto;     /* grow with content */
+    margin: 0;        /* remove any centering margins */
+    border: none;     /* optional: remove border for full-screen look */
+    background-color: none;
+  }
+
+  .container header,
+  .container main {
+    padding-left: 1rem; /* optional padding */
+    padding-right: 1rem;
+  }
+}

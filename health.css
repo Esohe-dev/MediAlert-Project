@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #5FC7FA;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  font-family: "Manrope", sans-serif;
+}
+.container nav .img {
+  display: flex;
+  align-items: center;
+}
+.container nav #mobileMenu {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.container nav #mobileMenu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+.container nav #mobileMenu a:hover {
+  color: #0856F1;
+}
+.container nav #mobileMenu #signOutBtn {
+  padding: 0.7rem;
+  color: #FFFFFF;
+  background-color: #0856F1;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.container nav #mobileMenu #signOutBtn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.container nav #menubtn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.container h1 {
+  color: #0856F1;
+  font-size: 44px;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.container #img1 {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+.container #img2 {
+  margin-left: 68rem;
+}
+.container .boxes {
+  display: flex;
+  flex-direction: column;
+}
+.container .boxes img {
+  width: 2rem;
+}
+.container .boxes h3 {
+  color: #0856F1;
+}
+.container .boxes span {
+  color: #6D6D6D;
+  font-size: 14px;
+}
+.container .boxes .box1 {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+.container .boxes .box1 div {
+  border: 1.5px solid #0856F1;
+  border-radius: 1.5rem;
+}
+.container .boxes .box1 .item1 {
+  width: 32rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+.container .boxes .box1 .item2 {
+  width: 25rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+.container .boxes .box2 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.container .boxes .box2 div {
+  border: 1.5px solid #0856F1;
+  border-radius: 1.5rem;
+}
+.container .boxes .box2 .item3 {
+  width: 19rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+.container .boxes .box2 .item4 {
+  width: 19rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+.container .boxes .box2 .item5 {
+  width: 19rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+
+/* MOBILE RESPONSIVENESS */
+/*TABLETS (1520px and below)*/
+@media (max-width: 1520px) {
+  .container nav .menu {
+    gap: 7rem;
+  }
+  .container nav .menu .links {
+    gap: 2rem;
+  }
+  .container #img1, #img2 {
+    display: none;
+  }
+  .container h1 {
+    padding-bottom: 2rem;
+  }
+  .container .boxes .box1,
+  .container .boxes .box2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+/*TABLETS (1024px and below)*/
+@media (max-width: 1024px) {
+  .container nav .menu {
+    gap: 2.5rem;
+  }
+  .container nav .menu .links {
+    gap: 1rem;
+  }
+  .container #img1, #img2 {
+    display: none;
+  }
+  .container h1 {
+    padding-bottom: 2rem;
+  }
+  .container .boxes .box1,
+  .container .boxes .box2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+/*Tablets (768px and below) */
+@media (max-width: 768px) {
+  .container nav {
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .container nav #mobileMenu.active {
+    display: flex;
+  }
+  .container nav #menubtn {
+    display: block;
+  }
+  .container nav #mobileMenu {
+    display: none;
+    position: absolute; /* remove it from nav flow */
+    top: 100%; /* right below the navbar */
+    right: 0;
+    width: 40%;
+    background-color: #5FC7FA;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+  .container .boxes .box1,
+  .container .boxes .box2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .container nav #mobileMenu.active {
+    display: flex;
+  }
+  .container nav #menubtn {
+    display: block;
+  }
+  .container nav #mobileMenu {
+    display: none;
+    position: absolute; /* remove it from nav flow */
+    top: 100%; /* right below the navbar */
+    right: 0;
+    width: 40%;
+    background-color: #5FC7FA;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+  .container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  #img1, #img2 {
+    display: none;
+  }
+  .container .boxes .box1,
+  .container .boxes .box2 {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .container .boxes .box2 {
+    margin-bottom: 2rem;
+  }
+  .container .boxes .box1 .item1,
+  .container .boxes .box1 .item2,
+  .container .boxes .box2 .item3,
+  .container .boxes .box2 .item4,
+  .container .boxes .box2 .item5 {
+    width: 90%; /* Full width on mobile */
+    padding: 2rem;
+  }
+  .container nav .menu #btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+  .container .boxes h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .container .boxes span {
+    font-size: 12px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=health.css.map */

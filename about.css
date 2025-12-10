@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f9fc;
+  margin: 0%;
+  padding: 0%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #5FC7FA;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  font-family: "Manrope", sans-serif;
+}
+nav .img {
+  display: flex;
+  align-items: center;
+}
+nav #mobileMenu {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+nav #mobileMenu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+nav #mobileMenu a:hover {
+  color: #0856F1;
+}
+nav #mobileMenu #signOutBtn {
+  padding: 0.7rem;
+  color: #FFFFFF;
+  background-color: #0856F1;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+nav #mobileMenu #signOutBtn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+nav #menubtn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 2rem;
+  padding: 40px;
+  border: 3px solid #4d7dfe;
+  border-radius: 18px;
+  font-family: "Manrope", sans-serif;
+}
+.container #txt {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: bold;
+  color: #0856F1;
+}
+.container #txt #bold {
+  color: #3D3D3D;
+}
+.container .content-box {
+  display: flex;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container .content-box img {
+  width: 500px;
+  border-radius: 5px;
+}
+.container .content-box .text {
+  display: flex;
+  flex-direction: column;
+}
+.container .content-box .text span {
+  color: #6D6D6D;
+  font-size: 17px;
+  font-weight: 500;
+}
+.container .content-box .text #btn {
+  background: #0856F1;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin-top: 3rem;
+  width: 16rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.container .content-box .text #btn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/*MOBILE RESPONSIVENESS*/
+/* Large Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  nav {
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  nav .menu {
+    gap: 2.5rem;
+  }
+  nav .menu .links {
+    gap: 0.8rem;
+  }
+  .container {
+    margin: 1.5rem;
+    padding: 30px;
+  }
+  .container .content-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+/*Tablets (768px and below) */
+@media (max-width: 768px) {
+  nav {
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  nav #mobileMenu.active {
+    display: flex;
+  }
+  nav #menubtn {
+    display: block;
+  }
+  nav #mobileMenu {
+    display: none;
+    position: absolute; /* remove it from nav flow */
+    top: 100%; /* right below the navbar */
+    right: 0;
+    width: 40%;
+    background-color: #5FC7FA;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+  .container {
+    padding: 25px;
+  }
+  .container #txt {
+    font-size: 26px;
+    text-align: center;
+  }
+  .container .content-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .container .content-box img {
+    width: 85%;
+  }
+  .container .content-box .text span {
+    font-size: 16px;
+  }
+  .container .content-box .text #btn {
+    margin-top: 2rem;
+    width: 16rem;
+    font-size: 18px;
+  }
+}
+/*Mobile Phones (480px and below)*/
+@media (max-width: 480px) {
+  nav #mobileMenu.active {
+    display: flex;
+  }
+  nav #menubtn {
+    display: block;
+  }
+  nav #mobileMenu {
+    display: none;
+    position: absolute; /* remove it from nav flow */
+    top: 100%; /* right below the navbar */
+    right: 0;
+    width: 40%;
+    background-color: #5FC7FA;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+  .container {
+    margin: 1rem;
+    padding: 20px;
+  }
+  .container #txt {
+    font-size: 22px;
+  }
+  .container .content-box img {
+    width: 100%;
+  }
+  .container .content-box .text span {
+    font-size: 15px;
+    text-align: center;
+  }
+  .container .content-box .text {
+    align-items: center;
+    text-align: center;
+  }
+  .container .content-box .text #btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=about.css.map */

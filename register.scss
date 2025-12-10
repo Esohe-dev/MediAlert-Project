@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.231);;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    border: 2px solid gray;
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    header{
+        background-color: #0F77F0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        .btn{
+            border-radius: 2rem;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 0.2rem;
+            background-color: #64748b30;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        #btn1{
+           border-radius: 1rem;
+           padding: 0.5rem 3.5rem;
+           border: none;
+        }
+        #btn1:hover{
+            background-color: white;
+        }
+        #btn2{
+           border-radius: 1rem;
+           padding: 0.5rem 3rem;
+           border: none;
+        }
+        #btn2:hover{
+            background-color: white;
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        gap: 10px;
+        input{
+            width: 20rem;
+            padding-left: 30px;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            border-radius: 20px;
+            border: 2px solid #E2E8F0;
+        }
+    }
+   #register{
+        border: none;
+        border-radius: 2rem;
+        padding: 0.8rem 8rem;
+        max-width: fit-content;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        background-color: #0F77F0;
+        color: white;
+   }
+ }
+}
+
+
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  body {
+    display: block;
+    background-color: white;
+  }
+
+  .container {
+    width: 100%;      /* full width of the screen */
+    height: auto;     /* grow with content */
+    margin: 0;        /* remove any centering margins */
+    border: none;     /* optional: remove border for full-screen look */
+    background-color: none;
+  }
+}

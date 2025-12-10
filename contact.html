@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="img">
+                <img src="assets/image 63.png" alt="">
+                <img src="assets/MediAlert (1).png" alt="">
+            </div>
+            <div class="menu" id="mobileMenu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="health.html">Health Info</a>
+                <a href="firstaid.html">First Aid</a>
+                <a href="contact.html">Contact Us</a>
+            <button id="signOutBtn">Sign Out</button>
+            </div>
+            <i class="fa-solid fa-bars" id="menubtn"></i>
+        </nav>
+
+       <div class="texts">
+        <div class="txt">
+            <h2>Contact Our Support Team Today</h2>
+            <span>Facing a crisis? Need app support?
+                Our dedicated team is <br>here to ensure you are ready to use MediAlert:</span>
+        </div>
+            <form id="my-form" action="https://formspree.io/f/xnnegnno" method="POST">
+                    <div class="form-group">
+                        <label for="text"><img src="assets/Vector (1).png" 
+                            alt="">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="phone"><img src="assets/Medi Alert(acc page 1) (8)/Hero Section/ic_round-email 5.png" 
+                            alt="">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+                    </div>
+                        
+                    <div id="btn">
+                        <button id="btn">Contact us</button>
+                    </div>
+                    <span id="errorMsg"></span>
+            </form>
+        </div>
+    </div>
+
+    <script src="menubar.js"></script>
+    <script src="contact.js"></script>
+    <script src="signout.js"></script>
+</body>
+</html>
