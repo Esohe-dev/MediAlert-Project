@@ -192,30 +192,6 @@
 }
 
 /* MOBILE RESPONSIVENESS */
-/*TABLETS (1520px and below)*/
-@media (max-width: 1520px) {
-  .container nav {
-    gap: 1rem;
-    padding: 1rem 1rem;
-  }
-  .container nav #mobileMenu {
-    gap: 1.5rem;
-  }
-  .container section {
-    flex-direction: column;
-    margin: 2rem;
-  }
-  .container section .text .gethelp {
-    width: 47rem;
-    margin-top: 5rem;
-  }
-  .container section .text .gethelp form .form-group input {
-    width: 10rem;
-  }
-  .container section .images img {
-    display: none;
-  }
-}
 /*TABLETS (1024px and below)*/
 @media (max-width: 1024px) {
   .container section {
