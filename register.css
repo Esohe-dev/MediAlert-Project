@@ -81,6 +81,9 @@ body {
   border-radius: 20px;
   border: 2px solid #E2E8F0;
 }
+.container main .form label {
+  padding-left: 10px;
+}
 .container main #register {
   border: none;
   border-radius: 2rem;
@@ -109,7 +112,6 @@ body {
     background-color: none;
   }
   .container main .form input[type=date] {
-    padding-left: 30px;
     color: gray;
   }
 }/*# sourceMappingURL=register.css.map */
