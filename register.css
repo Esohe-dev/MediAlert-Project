@@ -108,4 +108,8 @@ body {
     border: none; /* optional: remove border for full-screen look */
     background-color: none;
   }
+  .container main .form input[type=date] {
+    padding-left: 30px;
+    color: gray;
+  }
 }/*# sourceMappingURL=register.css.map */
