@@ -326,6 +326,9 @@
   .container section .text .img {
     margin-right: 1rem;
   }
+  .container section .text .img .imgs {
+    gap: 0.5rem;
+  }
   .container section .text .img .imgs img {
     width: 3rem;
   }

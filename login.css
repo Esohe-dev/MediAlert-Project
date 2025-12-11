@@ -119,4 +119,8 @@ body {
     border: none; /* optional: remove border for full-screen look */
     background-color: none;
   }
+  .container main .text {
+    display: flex;
+    gap: 5rem;
+  }
 }/*# sourceMappingURL=login.css.map */
