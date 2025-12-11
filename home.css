@@ -323,8 +323,11 @@
   .container section .text #bold {
     font-size: 26px;
   }
+  .container section .text .img {
+    margin-right: 1rem;
+  }
   .container section .text .img .imgs img {
-    width: 4rem;
+    width: 3rem;
   }
   .container section .text #small {
     font-size: 13px;
